@@ -142,7 +142,8 @@ class YOLOV5ToCOCO(object):
                 if len(new_anno) > 0:
                     annotations.extend(new_anno)
                 else:
-                    raise ValueError(f'{label_path} is empty')
+                    # raise ValueError(f'{label_path} is empty')
+                    pass
             else:
                 raise FileNotFoundError(f'{label_path} not exists')
 
